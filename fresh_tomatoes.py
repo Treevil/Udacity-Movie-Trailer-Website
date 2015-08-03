@@ -150,7 +150,7 @@ def create_movie_tiles_content(movies):
         # Append the tile for the movie with its content filled in
         content += movie_tile_content.format(
             movie_title=movie.title,
-            movie_storyline=movie.storyline,
+            movie_storyline=movie.description,
             movie_genre=movie.genre,
             movie_release=movie.release,
             movie_main_actors=movie.main_actors,
