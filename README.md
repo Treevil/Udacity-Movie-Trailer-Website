@@ -9,7 +9,7 @@ The following code include some of my experiment with python
 ## The Latest Version
 For get the last version of this software can be downloaded, go to https://github.com/Treevil/Udacity-Movie-Trailer-Website
 
-Requirement
+## Requirement
 
 For run this program you will need to have installed on your computer [Python 2.7] (https://www.python.org/downloads/).
 
@@ -63,5 +63,5 @@ TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
 **Trevor Devalle**
 
 * <https://twitter.com/3evil>
-* <devalletrevor.com>
+* <http://www.devalletrevor.com>
 * trevor.devalle@gmail.com
