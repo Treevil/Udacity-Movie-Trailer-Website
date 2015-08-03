@@ -7,7 +7,7 @@ The following code include some of my experiment with python
 
 
 ## The Latest Version
-For get the last version of this software can be downloaded, go to https://github.com/Treevil/Udacity-Movie-Trailer-Website
+For get the last version of this software go to https://github.com/Treevil/Udacity-Movie-Trailer-Website
 
 ## Requirement
 

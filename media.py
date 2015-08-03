@@ -28,7 +28,7 @@ class Movie(Video):
     Attributes:
         - movie_release(str):     Release date
         - movie_main_actors(str): Main actors inside the movie
-        - poster_image(str):      Url of the video poster image
+        - poster_image(str):      Urof the video poster image
         - trailer_youtube(str):   Url of the youtube trailer 
 
     """
