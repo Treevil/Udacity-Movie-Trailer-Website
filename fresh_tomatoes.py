@@ -7,7 +7,6 @@ main_page_head = '''
 <head>
     <meta charset="utf-8">
     <title>Fresh Tomatoes!</title>
-
     <!-- Bootstrap 3 -->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
@@ -121,9 +120,6 @@ main_page_content = '''
 </html>
 '''
 
-#self, movie_title, movie_storyline, movie_genre, movie_release, movie_main_actors, poster_image, trailer_youtube
-
-
 # A single movie entry html template
 movie_tile_content = '''
 <div class="col-md-6 col-lg-4 movie-tile" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
@@ -133,6 +129,7 @@ movie_tile_content = '''
     </div>
     <p><span class="bold">Storyline: </span>{movie_storyline} <br>
     <span class="bold">Genre: </span>{movie_genre}<br>
+    <span class="bold">Duration: </span>{movie_duration}<br>
     <span class="bold">USA release date: </span>{movie_release}<br>
     <span class="bold">Stars: </span>{movie_main_actors}</p>
 </div>
@@ -146,12 +143,13 @@ def create_movie_tiles_content(movies):
         youtube_id_match = re.search(r'(?<=v=)[^&#]+', movie.trailer_youtube_url)
         youtube_id_match = youtube_id_match or re.search(r'(?<=be/)[^&#]+', movie.trailer_youtube_url)
         trailer_youtube_id = youtube_id_match.group(0) if youtube_id_match else None
-
+        
         # Append the tile for the movie with its content filled in
         content += movie_tile_content.format(
             movie_title=movie.title,
             movie_storyline=movie.description,
             movie_genre=movie.genre,
+            movie_duration=movie.duration,
             movie_release=movie.release,
             movie_main_actors=movie.main_actors,
             poster_image_url=movie.poster_image_url,
